@@ -83,6 +83,7 @@ p {
 #video {
     width: 60vw;
     height: 60vh;
+    border: 0;
 }
 
 h2 {
@@ -114,7 +115,7 @@ input {
     cursor: pointer;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
     body {
         font-size: 12px;
     }
