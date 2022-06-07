@@ -6,6 +6,9 @@
     --accent-color: #e5b337;
     --background-color: #242424;
 }
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-color: var(--background-color);
@@ -90,25 +93,25 @@ p {
 
 h2 {
     color: var(--accent-color);
-    font-size: 45px;
+    font-size: 42px;
 }
 
 form {
     position: absolute;
     top: 190vh;
-    left: 30vw;
+    left: 35vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 40vw;
-    padding: 30px;
+    width: 30vw;
+    padding: 20px;
     border: 2px solid var(--accent-color);
     border-radius: 3%;
 }
 
 input {
-    margin: 40px;
+    margin: 20px;
     padding: 10px;
 }
 
