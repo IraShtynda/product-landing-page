@@ -6,15 +6,15 @@
     --accent-color: #e5b337;
     --background-color: #242424;
 }
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: var(--background-color);
     padding: 0;
     margin: auto;
-    font-size: 20px;
+    font-size: 17px;
     color: var(--main-color);
 }
 
@@ -24,7 +24,7 @@ header {
     left: 0;
     right: 0;
     z-index: 2;
-    height: 10vh;
+    height: 15vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,7 +35,7 @@ header {
 }
 
 #header-img {
-    width: 16vw;
+    width: 12vw;
 }
 
 ul {
@@ -47,7 +47,7 @@ ul {
 
 a {
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 1vh 2vw;
     color: var(--main-color);
 }
 
@@ -64,30 +64,54 @@ a:hover {
     background: url('https://res2.weblium.site/res/5c8f7be87d82be00257c7030/5ce52ec806ee3a0024195a18_optimized');
     min-height: 90vh;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
 }
 
 h1 {
-    font-size: 70px;
-    padding: 20vh 5vw 1vh;
+    font-size: 62px;
+    padding: 20vh 10vw 1vh;
     font-weight: 700;
     font-style: italic;
 }
 
 p {
-    padding-left: 5vw;
+    padding-left: 10vw;
+}
+
+.about {
+    background-image: url('https://res2.weblium.site/res/5c8f7be87d82be00257c7030/5ce54209757e790023a7d6f1_optimized_1920.webp');
+    background-color: var(--background-color);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    top: 100vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10vw;
+    padding-top: 15vh;
+}
+
+.about>p {
+    width: 50%;
+    text-align: justify;
 }
 
 .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     z-index: 1;
-    top: 100vh;
-    left: 20vw;
+    top: 210vh;
+    left: 25vw;
 }
 
 #video {
-    width: 60vw;
-    height: 60vh;
+    width: 50vw;
+    height: 50vh;
     border: 0;
 }
 
@@ -96,18 +120,32 @@ h2 {
     font-size: 42px;
 }
 
-form {
+.form {
+    background: url('https://res2.weblium.site/res/5c8f7be87d82be00257c7030/5ce6905744ded2002396b850_optimized_1920.webp');
+    background-size: cover;
+    background-position: center;
     position: absolute;
-    top: 190vh;
-    left: 35vw;
+    display: flex;
+    justify-content: end;
+    padding: 15vh 25vw;
+    width: 100vw;
+    height: 70vh;
+    z-index: 1;
+    top: 300vh;
+}
+
+
+form {
+    background-color: var(--main-color);
+    width: 20vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    width: 30vw;
     padding: 20px;
     border: 2px solid var(--accent-color);
-    border-radius: 3%;
+    border-radius: 5%;
 }
 
 input {
@@ -120,7 +158,23 @@ input {
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+h3 {
+    font-size: 30px;
+    color: var(--background-color);
+}
+
+footer {
+    position: absolute;
+    top: 370vh;
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+@media (max-width: 768px) {
     body {
         font-size: 12px;
     }
@@ -130,15 +184,33 @@ input {
     }
 
     h1 {
-        font-size: 20px;
+        padding: 30vh 5vw 1vh;
+        font-size: 28px;
     }
 
     h2 {
         font-size: 16px;
     }
 
+    .about {
+        background-image: none;
+    }
+
+    .about>p {
+        width: 80%;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .form {
+        justify-content: center;
+        padding: 10vh 10vw;
+
+    }
+
     form {
-        left: 5vw;
         width: 80vw;
         padding: 10px;
         border: 1px solid var(--accent-color);
