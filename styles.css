@@ -190,7 +190,7 @@ footer {
     }
 
     h2 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .about {
@@ -200,9 +200,16 @@ footer {
     .about>p {
         width: 80%;
     }
-
+    .video {
+        left: 10vw;
+    }
+    
+    #video {
+        width: 80vw;
+        height: 60vh;
+    }
     h3 {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .form {
