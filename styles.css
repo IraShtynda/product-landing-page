@@ -29,7 +29,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2vh;
+    padding-bottom: 2vh;
     border-bottom: 1px solid var(--main-color);
     background-color: var(--background-color);
 }
@@ -47,7 +47,7 @@ ul {
 
 a {
     text-decoration: none;
-    padding: 1vh 2vw;
+    padding: 1vh 10vw;
     color: var(--main-color);
 }
 
@@ -173,6 +173,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: var(--background-color);
+    border-bottom: 1px solid var(--main-color);
 }
 
 @media (max-width: 768px) {
