@@ -36,6 +36,7 @@ header {
 
 #header-img {
     width: 12vw;
+    padding-legt: 2vw;
 }
 
 ul {
@@ -47,7 +48,7 @@ ul {
 
 a {
     text-decoration: none;
-    padding: 1vh 10vw;
+    padding: 1vh 2vw;
     color: var(--main-color);
 }
 
