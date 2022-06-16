@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,700&display=swap');
 
 :root {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lora', serif;
     --main-color: #ffffff;
     --accent-color: #e5b337;
     --background-color: #242424;
@@ -29,7 +29,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 2vh;
     border-bottom: 1px solid var(--main-color);
     background-color: var(--background-color);
 }
@@ -128,11 +127,11 @@ h2 {
     position: absolute;
     display: flex;
     justify-content: end;
-    padding: 15vh 25vw;
+    padding: 15vh 20vw;
     width: 100vw;
-    height: 70vh;
+    height: 75vh;
     z-index: 1;
-    top: 300vh;
+    top: 295vh;
 }
 
 
@@ -146,12 +145,13 @@ form {
     text-align: center;
     padding: 20px;
     border: 2px solid var(--accent-color);
-    border-radius: 5%;
+    border-radius: 20px;
 }
 
 input {
     margin: 20px;
     padding: 10px;
+    border-radius: 10px;
 }
 
 #submit {
@@ -160,7 +160,7 @@ input {
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 28px;
     color: var(--background-color);
 }
 
@@ -175,6 +175,29 @@ footer {
     align-items: center;
     background-color: var(--background-color);
     border-top: 1px solid var(--main-color);
+}
+
+@media (max-width: 1200px) {
+
+    .about {
+        background-image: none;
+    }
+
+    .about>p {
+        width: 80%;
+    }
+
+    form {
+        width: 60vw;
+        padding: 10px;
+    }
+
+    .form {
+        justify-content: center;
+        padding: 15vh 5vw;
+
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -195,35 +218,21 @@ footer {
         font-size: 20px;
     }
 
-    .about {
-        background-image: none;
-    }
-
-    .about>p {
-        width: 80%;
-    }
     .video {
         left: 10vw;
     }
-    
+
     #video {
         width: 80vw;
         height: 60vh;
     }
+
     h3 {
         font-size: 18px;
     }
 
-    .form {
-        justify-content: center;
-        padding: 10vh 10vw;
-
-    }
-
     form {
         width: 80vw;
-        padding: 10px;
-        border: 1px solid var(--accent-color);
     }
 
     input {
